@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="206" height="206" viewBox="0 0 206 206">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #404040;
+      }
+
+      .cls-3 {
+        fill: #a7a7a7;
+        font-size: 14px;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+      }
+
+      .cls-4 {
+        filter: url(#Ellipse_3245);
+      }
+    </style>
+    <filter id="Ellipse_3245" x="0" y="0" width="206" height="206" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_4213" data-name="Group 4213" transform="translate(-528 -86.832)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 528, 86.83)">
+      <circle id="Ellipse_3245-2" data-name="Ellipse 3245" class="cls-1" cx="94" cy="94" r="94" transform="translate(9 6)"/>
+    </g>
+    <g id="image" transform="translate(610.872 150.561)">
+      <g id="Group_4174" data-name="Group 4174" transform="translate(0 0)">
+        <g id="Group_4173" data-name="Group 4173" transform="translate(0)">
+          <path id="Path_11008" data-name="Path 11008" class="cls-2" d="M35.809,0H5.246A5.252,5.252,0,0,0,0,5.246V35.809a5.252,5.252,0,0,0,5.246,5.246H35.809a5.252,5.252,0,0,0,5.246-5.246V5.246A5.252,5.252,0,0,0,35.809,0Zm2.828,35.809a2.831,2.831,0,0,1-2.828,2.828H5.246a2.831,2.831,0,0,1-2.828-2.828V31.4l7.959-6.772a.781.781,0,0,1,1.007-.006l4.986,4.14A1.209,1.209,0,0,0,18,28.685L29.844,16.821a.783.783,0,0,1,1.162.06l7.632,9.4v9.532Zm0-13.368-5.755-7.086a3.2,3.2,0,0,0-4.75-.244L17.066,26.2,12.929,22.76a3.2,3.2,0,0,0-4.119.025L2.418,28.224V5.246A2.831,2.831,0,0,1,5.246,2.418H35.809a2.831,2.831,0,0,1,2.828,2.828Z" transform="translate(0)"/>
+        </g>
+      </g>
+      <g id="Group_4176" data-name="Group 4176" transform="translate(7.093 5.051)">
+        <g id="Group_4175" data-name="Group 4175">
+          <path id="Path_11009" data-name="Path 11009" class="cls-2" d="M94.292,62.995a5.831,5.831,0,1,0,5.831,5.831A5.837,5.837,0,0,0,94.292,62.995Zm0,9.243A3.412,3.412,0,1,1,97.7,68.826,3.416,3.416,0,0,1,94.292,72.238Z" transform="translate(-88.461 -62.995)"/>
+        </g>
+      </g>
+    </g>
+    <text id="Insert_Dish_Image" data-name="Insert Dish Image" class="cls-3" transform="translate(570.869 217.937)"><tspan x="0" y="0">Insert Dish Image</tspan></text>
+  </g>
+</svg>

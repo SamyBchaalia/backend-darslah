@@ -1,0 +1,66 @@
+<form [formGroup]='this.service.form' class="normal-form" (submit)="onSubmit()">
+    
+  <div class="row">
+
+  <div class="col-md-9">
+ 
+    
+      <div>General Information</div>
+      <div class="form-row">
+        <div class="text-center">
+          <img
+            [src]="Foodspecs.image"
+            width="350px"
+            height="250px"
+            (click)="uplo.click()"
+          />
+        
+  
+        <label>Insert Dish Image</label>
+        <input
+          accept="image/*"
+          #uplo
+          type="file"
+          class="form-control"
+          formControleName="image"
+          (change)="show($event)"
+        />
+      <div class="controles-container">
+        <input type="hidden" formControlName="$key">
+        <input type="hidden" formControlName="image">
+        <mat-icon> restaurant</mat-icon> <mat-form-field>
+        
+        <input formControlName="name" matInput  placeholder="product name" (keyup)='Foodname($event)'>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="price" type="number" matInput placeholder="price" (keyup)='Foodprice($event)'>
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="Quantity" matInput  maxlength="5" placeholder="Quantity" >
+    </mat-form-field>
+    <mat-form-field>
+        <input formControlName="description" matInput placeholder="description" (keyup)='Fooddescription($event)'>
+    </mat-form-field></div>
+    </div></div>
+  </div>
+    <div class="col-md-3">
+
+        App Preview
+        <div class="card" style="text-align: center;">
+          <img class="card-img-top img-responsive" src={{Foodspecs.image}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{Foodspecs.name}}<span>{{Foodspecs.price}} DT</span></h4>
+            <p class="card-text">{{Foodspecs.description}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div> 
+      <div class="button-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
+        <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+      </div>
+    </div>
+      
+      
+  </div>
+  
+</form>

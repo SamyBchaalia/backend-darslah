@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dar-sllah": {
+      "hosting": {
+        "DarSlah": [
+          "dar-sllah"
+        ]
+      }
+    }
+  }
+}

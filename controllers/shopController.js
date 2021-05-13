@@ -3,7 +3,6 @@
 const firebase = require('../db');
 const Shop = require('../models/shop');
 const Comment= require('../models/comment')
-const { app } = require('firebase-admin');
 
 
 const firestore = firebase.firestore();

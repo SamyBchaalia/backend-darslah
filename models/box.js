@@ -10,7 +10,7 @@ class Box {
             this.description = description;
             this.image=image;
             this.price = price;
-            this.rate = rate;           
+            this.rate = rate;   
 }
 }
 

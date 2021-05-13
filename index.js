@@ -9,12 +9,12 @@ const dishsRoutes = require('./routes/dish-routes');
 const boxsRoutes = require('./routes/box-routes');
 const commentsRoutes = require('./routes/comment-routes');
 
-
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/api', studentRoutes.routes);
 app.use('/api',shopsRoutes.routes);

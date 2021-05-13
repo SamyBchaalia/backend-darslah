@@ -1,9 +1,12 @@
 'use strict';
 
+const { app } = require('firebase-admin');
 const firebase = require('../db');
 const box = require('../models/box');
 const firestore = firebase.firestore();
 const Comment = require('../models/comment')
+const Shop = require('../models/shop')
+
 
 
 const addBox = async (req, res, next) => {

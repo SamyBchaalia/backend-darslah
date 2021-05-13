@@ -1,0 +1,103 @@
+<form [formGroup]='this.service.form' class="normal-form" (submit)="onSubmit()">
+    
+    <div class="row">
+  
+    <div class="col-md-9">
+   
+      
+        <div>General Information</div>
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <img
+              [src]="Foodspecs.image"
+              width="350px"
+              height="250px"
+              (click)="uplo.click()"
+            />
+          
+            <p hidden> <label>Insert Dish Image</label>
+          <input
+          type="hidden"
+            accept="image/*"
+            #uplo
+            type="file"
+            class="form-control"
+            (change)="show($event)"
+          /></p></div>
+
+         
+    
+          <input type="hidden" formControlName="$key">
+          <input type="hidden" formControlName="image">
+         <div class="container">
+          <div class="row formrow">
+
+              <div class="col-md-1">
+                <img src="../../../assets/restaurant.svg" width="100%"><div class="col-md-3" >
+                    <span >Dish Name</span></div>
+              </div>
+              <div class="col-md-8" >
+                <input formControlName="name" class="inpu" placeholder="product name" (keyup)='Foodname($event)'>
+              </div>
+          </div>  
+          <div class="row formrow">
+            <div class="col-md-1" >
+              <img src="../../../assets/dollar-tag.svg" width="auto">
+              <div class="col-md-3" >
+              <span >Price</span></div>
+            </div>
+            <div class="col-md-8">
+                <input formControlName="price" class="inpu" type="number"  placeholder="price" (keyup)='Foodprice($event)'>
+            </div>
+        </div> 
+        <div class="row formrow">
+            <div class="col-md-1">
+              <img src="../../../assets/box (1).svg" width="autp">
+              <div class="col-md-3" >
+
+              <span >Quantity</span>
+            </div></div>
+            <div class="col-md-8">
+                <input formControlName="Quantity"   maxlength="5" placeholder="Quantity" >
+
+            </div>
+        </div> 
+        <div class="row formrow">
+            <div class="col-md-4">
+              <img src="../../../assets/description.svg" width="auto"><span >Description</span>
+            </div>
+            <div class="col-md-8">
+                <input formControlName="description"  placeholder="description" (keyup)='Fooddescription($event)'>
+
+            </div>
+        </div>       
+             
+    </div>
+ 
+          
+      
+     
+   
+      </div>
+    </div>
+      <div class="col-md-3">
+  
+          App Preview
+          <div class="card" style="text-align: center;">
+            <img class="card-img-top img-responsive" src={{Foodspecs.image}} alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{Foodspecs.name}}<span>{{Foodspecs.price}} DT</span></h4>
+              <p class="card-text">{{Foodspecs.description}}</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div> 
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+        
+        
+    </div>
+   
+  </form>

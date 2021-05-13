@@ -1,0 +1,63 @@
+<mat-sidenav-container >
+    <mat-sidenav class="container" #sidenav mode="side" opened="true">
+      <mat-nav-list>
+  
+        <mat-list-item style="margin-top: 10%; margin-bottom:20%;">
+          <img src="../../../assets/dar-slah-logo_vert-e1587569069346.svg" width="100%">
+        </mat-list-item>
+        <mat-list-item >
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-outline-warning" >SING OUT</button>
+
+            </div>
+          </mat-list-item>
+          
+        <mat-list-item  class="item-link" [routerLink]="'dashboard'">
+            <img src="../../../assets/home.svg" height="50%">
+          <span class="margin" *ngIf="isExpanded">Home Main</span>
+        </mat-list-item>
+        <mat-list-item  class="item-link" [routerLink]="'info'">
+            <img src="../../../assets/restaurant.svg" height="50%">
+         <span class="margin" *ngIf="isExpanded">Today dishes</span>
+       </mat-list-item>
+       <mat-list-item class="item-link" [routerLink]="'info'">
+        <img src="../../../assets/rewind-time.svg" height="50%">
+      
+     <span class="margin" *ngIf="isExpanded">Before 48h</span>
+   </mat-list-item>
+       <mat-list-item class="item-link" [routerLink]="'info'">
+        <img src="../../../assets/take-away.svg" height="50%">
+      <span class="margin" *ngIf="isExpanded">Box</span>
+    </mat-list-item>
+       
+   <mat-list-item class="item-link" [routerLink]="'info'">
+    <img src="../../../assets/shop.svg" height="50%">
+  
+ <span class="margin"  *ngIf="isExpanded">Shop</span>
+</mat-list-item>
+<mat-list-item class="item-link" [routerLink]="'info'">
+    <img src="../../../assets/user (1).svg" height="50%">
+ <span class="margin" *ngIf="isExpanded">Clients Order</span>
+</mat-list-item>
+<mat-list-item class="item-link" [routerLink]="'info'">
+    <img src="../../../assets/plus (1).svg" height="50%">
+  
+ <span class="margin" *ngIf="isExpanded">Includes</span>
+</mat-list-item>
+<mat-list-item class="item-link" [routerLink]="'info'">
+    <img src="../../../assets/Group 4117.svg" height="50%">
+  
+ <span class="margin" *ngIf="isExpanded">General Information</span>
+</mat-list-item>
+        
+        
+  
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <div class="content">
+    
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-sidenav-container>

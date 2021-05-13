@@ -1,0 +1,13 @@
+● src
++---● app
+|   +--● products
+|   |  |--products.component.ts|.html|.css
+|   |  +--● product
+|   |  |  |--product.component.ts|.html|.css
+|   |  |+--● productList
+
+
+|   |  +--● shared
+|   |     |--product.service.ts (form group)
+|   |
+|   |--app.module.ts
